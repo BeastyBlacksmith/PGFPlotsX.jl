@@ -28,7 +28,7 @@ end
 
 @testset "pgf empty" begin
     @test squashed_repr_tex(@pgf Plot({}, Table([], []))) ==
-        "\\addplot[]\ntable[row sep={\\\\}]\n{\n\\\\\n}\n;" # note []
+        "\\addplot[]\ntable[\nrow sep={\\\\}\n]\n{\n\\\\\n}\n;" # note []
 end
 
 @testset "options push! and append!" begin
